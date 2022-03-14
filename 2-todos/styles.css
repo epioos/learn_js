@@ -1,0 +1,69 @@
+/*--- VARIABLE ---*/
+:root{
+    --clr-dark:#062C30;
+    --clr-mid:#94B49F;
+    --clr-light:#F6E7D8;
+    --clr-red:#FF7878;
+    --radius: 0.5rem;
+}
+
+
+/*--- GLOBAL ---*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr-dark);
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*--- TODOLIST ---*/
+
+h1{
+    color: var(--clr-red);
+    opacity: 0.6;
+    font-size: 5rem;
+    margin-bottom: 2%;
+}
+
+input{
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 20px;
+    background-color: var(--clr-light);
+    border: 1px solid var(--clr-dark);
+    border-radius: var(--radius);
+}
+
+input::placeholder{
+    color: var(--clr-dark);
+}
+
+#todos > li {
+    list-style-type: none;
+    color: var(--clr-light);
+    background-color: var(--clr-red);
+    border-radius: var(--radius);
+    width: 20vw;
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    margin-bottom: 5px;
+}
+
+.completed{
+    text-decoration: line-through;
+    background-color: var(--clr-mid) !important;
+}
+
+

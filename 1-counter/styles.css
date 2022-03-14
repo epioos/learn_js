@@ -1,0 +1,59 @@
+/*--- VARIABLE ---*/
+:root{
+    --clr-dark:#789395;
+    --clr-mid:#B4CFB0;
+    --clr-mid-light:#D3E4CD;
+    --clr-light:#E5E3C9;
+    --clr-red:#FF7878;
+    --radius: 0.5rem;
+}
+
+
+/*--- GLOBAL ---*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr-mid-light);
+    color: var(--clr-mid-light);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/*--- COUNTER ---*/
+#container{
+    text-align: center;
+    margin: 3rem auto;
+    background: var(--clr-dark);
+    border-radius: var(--radius);
+    width: 80vw;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#value{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.btn{
+    background: var(--clr-mid-light);
+    border: 1px solid var(--clr-red);
+    padding: 0.5rem;
+    margin: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--clr-dark);
+    border-radius: var(--radius);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover{
+    background: var(--clr-red);
+    border: 1px solid var(--clr-light);
+}
