@@ -1,0 +1,48 @@
+/*--- VARIABLE ---*/
+:root {
+    --clr-dark: #062C30;
+    --clr-mid: #94B49F;
+    --clr-light: #F6E7D8;
+    --clr-red: #FF7878;
+    --radius: 0.5rem;
+}
+
+
+/*--- GLOBAL ---*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr-dark);
+    height: calc(100vh - 100px);
+    width: 100vw;
+}
+
+h2{
+    color: var(--clr-light);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.conatiner{
+    height: calc(90vh - 150px);
+    width: 100vw;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--clr-red);
+}
+
+.move_to {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--clr-light);
+}
